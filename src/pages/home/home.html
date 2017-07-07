@@ -1,0 +1,19 @@
+<ion-content padding>
+  <form [formGroup]="login">
+    <ion-list>
+      <ion-item>
+        <ion-icon name="person" item-left></ion-icon>
+        <ion-label floating>Correo electronico:</ion-label>
+        <ion-input type="text" formControlName="usuario"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="ios-lock" item-left></ion-icon>
+        <ion-label floating>Contraseña:</ion-label>
+        <ion-input type="password" formControlName="clave"></ion-input>
+      </ion-item>
+    </ion-list>
+    <div padding>
+      <button ion-button block icon-right [disabled]="!login.valid" (click)="iniciarSesion()" >Entrar <ion-icon name="log-in"></ion-icon></button>
+    </div>
+  </form>
+</ion-content>

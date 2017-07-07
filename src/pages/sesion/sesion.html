@@ -1,0 +1,21 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>SESION</ion-title>
+    <ion-buttons end (click)="cerrarSesion()">
+      <button ion-button icon-only>
+        <ion-icon name="log-out"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+
+  <ion-list>
+    <ion-item *ngFor="let item of otrosDatos">
+      <ion-icon ios="ios-information" md="md-information" item-start></ion-icon>
+        {{item.datosA}} {{item.datosB}} {{item.datosC}}
+      <ion-badge item-end></ion-badge>
+    </ion-item>
+  </ion-list>
+</ion-content>
