@@ -5,7 +5,7 @@ import {ControladorSqlite} from '../providers/controlador-sqlite'
 
 @Injectable()
 export class ProviderUsuario {
-  public url:any="http://10.42.0.1/workana/apache-cordova/backend.php";
+  public url:any="http://www.smallsoftware.net/backendApp/backend.php";
   public headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded'});
   public options = new RequestOptions({ headers: this.headers });
   public usuario:any;
